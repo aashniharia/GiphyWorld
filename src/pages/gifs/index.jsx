@@ -97,7 +97,7 @@ const Giphy = () => {
               currentPage={currentPage}
               totalPages={totalPages}
               itemsPerPage={itemsPerPage}
-              onPageChange={handlePageChange}
+              onPageChange={(page) => handlePageChange(page)}
               maxPage={maxPage}
             />
             <GiphyList gifs={apiData} />

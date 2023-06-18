@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const Pagination = ({ currentPage, totalPages, onPageChange, maxPage }) => {
   const { t } = useTranslation();
-  const pageButtons = usePagination(
+  const { handlePageClick, renderPageButtons } = usePagination(
     currentPage,
     totalPages,
     maxPage,
@@ -14,13 +14,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange, maxPage }) => {
 
   const handlePreviousClick = () => {
     if (currentPage > 1) {
-      onPageChange(currentPage - 1);
+      handlePageClick(currentPage - 1);
     }
   };
 
   const handleNextClick = () => {
     if (currentPage < totalPages) {
-      onPageChange(currentPage + 1);
+      handlePageClick(currentPage + 1);
     }
   };
 
@@ -33,7 +33,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange, maxPage }) => {
       >
         {t("buttons.previous")}
       </PageButton>
-      {pageButtons}
+      {renderPageButtons()}
       <PageButton
         data-testid="page-button"
         onClick={handleNextClick}

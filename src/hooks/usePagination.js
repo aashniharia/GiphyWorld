@@ -23,7 +23,7 @@ const usePagination = (currentPage, totalPages, maxPage, onPageChange) => {
     if (page && currentPage !== page) {
       onPageChange(page);
     }
-  }, [currentPage, location.search, onPageChange]);
+  }, [location.search]);
 
   const renderPageButtons = () => {
     const buttons = [];
@@ -87,7 +87,10 @@ const usePagination = (currentPage, totalPages, maxPage, onPageChange) => {
     return buttons;
   };
 
-  return renderPageButtons();
+  return {
+    handlePageClick,
+    renderPageButtons,
+  };
 };
 
 export default usePagination;
