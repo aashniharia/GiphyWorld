@@ -8,10 +8,10 @@ This Project is a simple project that helps the users browse through a collectio
 3. **Run the app.** - `npm start`
 
 ## Implementation details:
-1.The Application implemented is a responsive web application using React.js
-2.The Application has a pagination feature to help users browse through the collection of gifs
-3.The users can view the details of the gif by clicking on them. A detailed view of some important information is shown
-4.The users can also filter the gifs by rating type of the gifs(additional feature)
+1. The Application implemented is a responsive web application using React.js
+2. The Application has a pagination feature to help users browse through the collection of gifs
+3. The users can view the details of the gif by clicking on them. A detailed view of some important information is shown
+4. The users can also filter the gifs by rating type of the gifs(additional feature)
 
 The following aspects have been implemented to make this application scalable
 
