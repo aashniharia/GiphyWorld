@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Project: Dog-Cat Gif app using React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project is a simple project that helps the users browse through a collection of cat and dog gifs
 
-## Available Scripts
+Implementation details:
+->The Application implemented is a responsive web application using React.js
+->The Application has a pagination feature to help users browse through the collection of gifs
+->The users can view the details of the gif by clicking on them. A detailed view of some important information is shown
+->The users can also filter the gifs by rating type of the gifs(additional feature)
 
-In the project directory, you can run:
+The following aspects have been implemented to make this application scalable
 
-### `npm start`
+1. Context API is used for state management
+2. React Router is used for routing
+3. A Modular folder structure has been incorporated such that new modules can be easily accomodated
+4. Jest is used to ensure the application functions correctly as it scales up
+5. Localisation using i18Next has been implemented, enabling the application to be used in different geographies
+6. Creating reusable components Such as Loaders, Filter and Pagination
+7. Styling is implemented by using styled components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Test cases have been written for the
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. the fetching data(api)
+2. Pagination component
+3. Filter component
 
-### `npm test`
+Dependencies used are:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- styled components : React Library for component level styles
+- react router: React library for handling routing
+- react axios : React library used to send async HTTP requests to rest end points
+- react-i18Next : Internationalization framework for React
+- prettier: Code Formatter
+- FontAwesome: Icon Library
 
-### `npm run build`
+Functionality:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- User is shown cat Gifs by default.
+- User can browse gifs by using the pagination and filter by rating options
+- user can change the category to dog Gifs by clicking on the Button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: the GIPHY Public API has a restriction of offset with a maximum of 4999. To address this I have changed the user experience by redirected the user to the last offset that the API would generate data for.

@@ -1,0 +1,40 @@
+{
+  "giphy": {
+    "catTitle": "Cat Gifs",
+    "dogTitle": "Dog Gifs",
+    "filterTitle": "Filter by Rating:",
+    "apiAlert": "This API supports an Offset of 4999 which exceeds the limit for the selected page. Redirecting to the last page supported by the API."
+  },
+  "GifDetail": {
+    "username": "User Name: ",
+    "followOn": "Follow On: ",
+    "rating": "Rating: ",
+    "source": "Source: ",
+    "type": "Type: ",
+    "noGifSelected": "Oops Something went wrong... please go back to expore further"
+  },
+  "footer": {
+    "footerDescription": "2023 Copyright : Giffy World by Aashni Haria"
+  },
+  "header": {
+    "logoTitle": "Giffy World",
+    "home": "Home",
+    "about": "About"
+  },
+  "about": {
+    "heading": "About",
+    "aboutParagraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et pellentesque augue. Mauris felis sapien, cursus id dolor in, fermentum luctus lorem. Nulla fermentum accumsan sollicitudin. Morbi urna ligula, scelerisque id ornare sed, hendrerit at dui. Etiam massa odio, pretium quis urna sit amet, tristique viverra erat. Duis consectetur, ligula sit amet fringilla finibus, lectus turpis scelerisque ante, non accumsan dolor ligula non ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas faucibus elementum lobortis. Ut viverra lectus nec eros condimentum posuere. In placerat mauris vitae venenatis ultrices. Pellentesque luctus eu velit a auctor. Praesent cursus eros eget nulla tincidunt suscipit. Aliquam purus quam, dictum eu lorem in, condimentum rutrum mauris. Fusce eu efficitur ligula.",
+    "aboutParagraph2": "Duis eu sapien lectus. Mauris bibendum vitae lorem ut laoreet. Aenean quis tortor lobortis, ultrices ligula a, facilisis tellus. Ut leo purus, iaculis sed molestie vel, facilisis a urna. Proin eu odio eu mi viverra lacinia. Sed ullamcorper erat mauris, vitae vulputate diam venenatis vel. Pellentesque dictum velit vel orci aliquet mollis. Proin ut faucibus leo, eu iaculis velit. Phasellus ante odio, tempus porttitor dui non, imperdiet viverra enim.",
+    "aboutParagraph3": "Nulla vitae condimentum dui. Quisque dictum rhoncus nulla, a placerat orci auctor in. Cras eleifend velit id lectus vehicula, quis elementum diam accumsan. Donec eros magna, lobortis sed magna at, consequat pharetra elit. Vestibulum facilisis tristique viverra. In ac lectus eu ipsum facilisis molestie ut at velit. Praesent maximus vulputate nisi, non efficitur velit. Fusce bibendum metus vel urna semper, vitae vulputate libero fringilla. Mauris non vehicula turpis, in sagittis mi. Curabitur dictum dolor tellus. Curabitur aliquet velit hendrerit nibh ultricies, a tristique mauris sodales. Sed quis nibh ipsum. Proin pulvinar libero magna, sed bibendum dui feugiat ac."
+  },
+  "buttons": {
+    "back": "Back",
+    "goBack": "Go Back",
+    "previous": "Prev",
+    "next": "Next"
+  },
+  "pageNotFound": {
+    "heading": "Page Not Found",
+    "message": "The requested page could not be found."
+  }
+}
